@@ -12,7 +12,7 @@ namespace CarBook.Persistence.Context
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;initial Catalog=CarBookDb;integrated Security=true;");
+			optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;initial Catalog=CarBookDb;integrated Security=true;TrustServerSertificate=True");
 
 		}
 		public DbSet<About> Abouts { get; set; }
